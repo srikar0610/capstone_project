@@ -1,0 +1,253 @@
+{
+  "volume": {
+    "tickets_processed": 80,
+    "answered_automatically": 62,
+    "escalated": 18,
+    "blocked_by_guardrails": 0
+  },
+  "business": {
+    "first_contact_resolution_percent": 77.5,
+    "escalation_rate_percent": 22.5,
+    "mean_response_minutes": 0.0002,
+    "median_response_minutes": 0.0002,
+    "baseline_first_contact_resolution_percent": 42,
+    "target_first_contact_resolution_percent": 60,
+    "baseline_reply_hours": "8-12",
+    "target_reply_minutes": 5,
+    "notes": "First contact resolution counts tickets answered from documentation without a person. Response time is processing time, because an automatic reply is sent as soon as the decision is logged. Customer satisfaction is not estimated here; it needs a human review sample."
+  },
+  "technical": {
+    "tickets_with_labels": 80,
+    "classification_macro_precision": 1.0,
+    "classification_per_class": {
+      "account_access": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "api_key_issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "api_usage_question": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "authentication_failure": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "billing_query": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "compliance_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "configuration_help": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "data_export": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "data_residency": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "database_issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "deployment_failure": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 5
+      },
+      "feature_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "integration_help": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "onboarding": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "performance_degradation": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "quota_or_overage": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 2
+      },
+      "rate_limit": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "rollback_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "security_incident": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "sso_configuration": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "unclear_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 6
+      },
+      "webhook_issue": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      }
+    },
+    "retrieval_passage_rate_percent": 92.5,
+    "retrieval_expected_doc_hit_percent": 92.45,
+    "citation_accuracy_percent": 100.0,
+    "latency_seconds_median": 0.0134,
+    "latency_seconds_p95": 0.0173,
+    "model_degraded_tickets": 0
+  },
+  "governance": {
+    "decisions_logged": 80,
+    "guardrail_activations_by_type": {},
+    "private_data_detections": 0,
+    "fairness_auto_answer_rate": {
+      "customer_tier": {
+        "rates": {
+          "business": 93.33,
+          "standard": 64.29,
+          "enterprise": 87.5
+        },
+        "max_gap_percentage_points": 29.04
+      },
+      "customer_region": {
+        "rates": {
+          "asia_pacific": 80.95,
+          "north_america": 81.48,
+          "europe": 76.0,
+          "latin_america": 57.14
+        },
+        "max_gap_percentage_points": 24.34
+      },
+      "language_fluency": {
+        "rates": {
+          "fluent": 77.05,
+          "non_fluent": 78.95
+        },
+        "max_gap_percentage_points": 1.9
+      }
+    },
+    "confidence_calibration": [
+      {
+        "low": 0.3,
+        "high": 0.4,
+        "count": 1,
+        "stated_confidence": 0.3601,
+        "observed_accuracy": 1.0,
+        "gap": -0.6399
+      },
+      {
+        "low": 0.4,
+        "high": 0.5,
+        "count": 2,
+        "stated_confidence": 0.4587,
+        "observed_accuracy": 1.0,
+        "gap": -0.5413
+      },
+      {
+        "low": 0.5,
+        "high": 0.6,
+        "count": 5,
+        "stated_confidence": 0.5758,
+        "observed_accuracy": 1.0,
+        "gap": -0.4242
+      },
+      {
+        "low": 0.6,
+        "high": 0.7,
+        "count": 5,
+        "stated_confidence": 0.6623,
+        "observed_accuracy": 1.0,
+        "gap": -0.3377
+      },
+      {
+        "low": 0.7,
+        "high": 0.8,
+        "count": 20,
+        "stated_confidence": 0.7637,
+        "observed_accuracy": 1.0,
+        "gap": -0.2363
+      },
+      {
+        "low": 0.8,
+        "high": 0.9,
+        "count": 41,
+        "stated_confidence": 0.8509,
+        "observed_accuracy": 1.0,
+        "gap": -0.1491
+      },
+      {
+        "low": 0.9,
+        "high": 1.0,
+        "count": 6,
+        "stated_confidence": 0.9144,
+        "observed_accuracy": 1.0,
+        "gap": -0.0856
+      }
+    ],
+    "decisions_match_tickets": true
+  }
+}

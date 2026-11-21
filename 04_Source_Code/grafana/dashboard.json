@@ -1,0 +1,8 @@
+{
+  "title": "CloudServe support system",
+  "panels": [
+    {"title": "Tickets by channel and outcome", "targets": [{"expr": "tickets_processed_total"}]},
+    {"title": "Guardrail blocks", "targets": [{"expr": "guardrail_blocks_total"}]},
+    {"title": "Latency p95", "targets": [{"expr": "histogram_quantile(0.95, rate(response_seconds_bucket[5m]))"}]}
+  ]
+}

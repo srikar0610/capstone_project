@@ -1,0 +1,25 @@
+# Pinned to wheels that install on Python 3.14 (Windows) and 3.11 (CI).
+# The pack's 2024 pins (LangChain 0.1, Chroma 0.3, scikit-learn 1.3) do not
+# publish wheels for current Python and need a C compiler this project does not use.
+# See docs/architecture.md.
+
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.14.4
+python-dotenv==1.2.4
+httpx==0.28.1
+
+scikit-learn==1.9.1
+numpy==2.5.5
+pandas==3.1.1
+
+SQLAlchemy==2.1.9
+prometheus-client==0.26.0
+python-json-logger==4.2.0
+
+requests==2.34.2
+PyYAML==6.0.4
+tqdm==4.70.1
+
+pytest==9.2.0
+pytest-asyncio==1.5.0

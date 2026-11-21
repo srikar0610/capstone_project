@@ -1,0 +1,11 @@
+Decide whether to send the drafted reply or escalate to a person.
+
+Send only when all of the following hold:
+- the intent is not security_incident, compliance_request, feature_request or unclear_request
+- intent confidence is at or above CONFIDENCE_THRESHOLD
+- at least one passage is at or above the relevance threshold
+- every guardrail returned blocked=false
+- the kill switch is off
+
+Otherwise escalate. The reason must be a sentence a support manager can read
+without looking at the code. The same inputs must produce the same decision.
